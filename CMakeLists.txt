@@ -7,6 +7,7 @@ link_directories(/usr/local/lib)
 
 set(MY_SOURCES
     src/main.cpp
+    src/gameclass.cpp
 )
 
 add_executable(${CMAKE_PROJECT_NAME} ${MY_SOURCES})
