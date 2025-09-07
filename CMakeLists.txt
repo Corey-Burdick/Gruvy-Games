@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 4.0)
 project(gruvy C CXX)
 
-include_directories(/usr/local/include)
+include_directories(include)
 
-link_directories(/usr/local/lib)
+link_directories(lib)
 
 set(MY_SOURCES
     src/main.cpp
