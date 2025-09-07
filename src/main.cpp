@@ -7,6 +7,7 @@ int main() {
   int windowHeight = 720;
   
   InitWindow(windowWidth, windowHeight, "Gruvy Games");
+  ToggleFullscreen();
 
   Game game = Game();
 
@@ -20,4 +21,5 @@ int main() {
 
     EndDrawing();
   }
+  ToggleFullscreen();
 }
