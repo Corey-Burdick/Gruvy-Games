@@ -4,7 +4,8 @@ Ball::Ball() {
   xPos = GetScreenWidth() / 2;
   yPos = GetScreenHeight() / 2;
   ballRadius = GetScreenHeight() / 40;
-  speedX = speedY = 400;
+  speedX = GetScreenWidth() / 3;
+  speedY = GetScreenHeight() / 2;
   srand(time(NULL));
 }
 
