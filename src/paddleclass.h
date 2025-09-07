@@ -4,7 +4,7 @@ class Paddle{
 public:
   float xPos;
   float yPos;
-  float speed = GetScreenHeight() / 2 - 60;
+  float speed = GetScreenHeight() / 2 - GetScreenHeight() / 12;
   int width = GetScreenWidth() / 64;
   int height = GetScreenHeight() / 7;
   Color color;
