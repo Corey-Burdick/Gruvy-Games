@@ -12,10 +12,13 @@ public:
   Ball ball = Ball();
   CpuPaddle cpu = CpuPaddle();
   PlayerPaddle player = PlayerPaddle();
+  bool paused = true;
 
   Game();
   void Update();
   void Draw();
+private:
+  void m_togglePaused();
 };
 
 #endif // GAME_CLASS_H 
