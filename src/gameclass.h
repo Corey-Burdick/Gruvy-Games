@@ -5,6 +5,7 @@
 #include "arenaclass.h"
 #include "ballclass.h"
 #include "paddleclass.h"
+#include "gruvboxcolors.h"
 
 class Game {
 public:

@@ -2,13 +2,13 @@
 
 void Paddle::Draw() {
   DrawRectangle(xPos, yPos, width, height, color);
-  DrawRectangleRoundedLinesEx(Rectangle{xPos, yPos, (float)width, (float)height}, 0.4, 10, 3, BLACK);
+  DrawRectangleRoundedLinesEx(Rectangle{xPos, yPos, (float)width, (float)height}, 0.4, 10, 3, GRUVBOX_FG);
 } 
 
 CpuPaddle::CpuPaddle() {
   xPos =  10;
   yPos = GetScreenHeight() / 2 - height / 2;
-  color = BLUE; 
+  color = GRUVBOX_BLUE; 
 }
 
 void CpuPaddle::Update(int ball_y) {
@@ -28,7 +28,7 @@ void CpuPaddle::Update(int ball_y) {
 PlayerPaddle::PlayerPaddle() {
   xPos = GetScreenWidth() - width - 10;
   yPos = GetScreenHeight() / 2 - height / 2;
-  color = RED;
+  color = GRUVBOX_RED;
 }
 
 void PlayerPaddle::Update() {

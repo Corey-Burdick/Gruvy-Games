@@ -5,6 +5,8 @@
 #include <random>
 #include <ctime>
 
+#include "gruvboxcolors.h"
+
 class Ball{
 public:
   float ballRadius;

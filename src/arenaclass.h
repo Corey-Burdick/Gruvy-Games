@@ -2,6 +2,7 @@
 #define ARENA_CLASS_H
 
 #include <raylib.h>
+#include "gruvboxcolors.h"
 
 class Arena{
 public:
