@@ -4,11 +4,14 @@
 #include <raylib.h>
 #include "arenaclass.h"
 #include "ballclass.h"
+#include "paddleclass.h"
 
 class Game {
 public:
   Arena arena = Arena();
   Ball ball = Ball();
+  CpuPaddle cpu = CpuPaddle();
+  PlayerPaddle player = PlayerPaddle();
 
   Game();
   void Update();
