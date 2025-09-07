@@ -14,11 +14,13 @@ public:
   float speedY;
   int width;
   int height;
+  int leftScore = 0;
+  int rightScore = 0;
 
   Ball();
   void Update();
   void Draw();
-  void Reset();
+  void Reset(bool playerScore);
 };
 
 #endif // BALL_CLASS_H
