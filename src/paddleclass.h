@@ -5,8 +5,8 @@ public:
   float xPos;
   float yPos;
   float speed = 360;
-  int width = 25;
-  int height = 120;
+  int width = GetScreenWidth() / 64;
+  int height = GetScreenHeight() / 7;
   Color color;
   
   void Draw();
