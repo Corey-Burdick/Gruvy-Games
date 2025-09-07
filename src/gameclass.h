@@ -3,10 +3,12 @@
 
 #include <raylib.h>
 #include "arenaclass.h"
+#include "ballclass.h"
 
 class Game {
 public:
   Arena arena = Arena();
+  Ball ball = Ball();
 
   Game();
   void Update();

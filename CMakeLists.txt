@@ -9,6 +9,7 @@ set(MY_SOURCES
     src/main.cpp
     src/gameclass.cpp
     src/arenaclass.cpp
+    src/ballclass.cpp
 )
 
 add_executable(${CMAKE_PROJECT_NAME} ${MY_SOURCES})

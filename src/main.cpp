@@ -3,11 +3,12 @@
 #include "gameclass.h"
 
 int main() {
-  Game game = Game();   
   int windowWidth = 1280;
   int windowHeight = 720;
   
   InitWindow(windowWidth, windowHeight, "Gruvy Games");
+
+  Game game = Game();
 
   while (!WindowShouldClose()) {
     BeginDrawing();
