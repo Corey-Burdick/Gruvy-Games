@@ -37,8 +37,8 @@ void Ball::Update() {
 void Ball::Draw() {
   DrawCircle(xPos, yPos, ballRadius, GRUVBOX_FG);
   DrawRing(Vector2{xPos, yPos}, ballRadius * 0.5, ballRadius * 0.75, 0, 360, 20, GRUVBOX_BG);
-  DrawText(TextFormat("%i", leftScore), GetScreenWidth() / 4, GetScreenHeight() / 8, 40, GRUVBOX_RED);
-  DrawText(TextFormat("%i", rightScore), GetScreenWidth() / 4 + GetScreenWidth() / 2, GetScreenHeight() / 8, 40, GRUVBOX_BLUE);
+  DrawText(TextFormat("%i", leftScore), GetScreenWidth() / 4, GetScreenHeight() / 8, 40, GRUVBOX_DARKRED);
+  DrawText(TextFormat("%i", rightScore), GetScreenWidth() / 4 + GetScreenWidth() / 2, GetScreenHeight() / 8, 40, GRUVBOX_DARKBLUE);
 }
 
 void Ball::Reset(bool playerScore) {
