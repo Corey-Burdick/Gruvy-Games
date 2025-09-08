@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
   }
   
   InitWindow(windowWidth, windowHeight, "Gruvy Games");
-  SetTargetFPS(120);
+  SetTargetFPS(240);
 
   if (fullscreen) {
     ToggleFullscreen();
