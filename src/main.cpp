@@ -26,6 +26,7 @@ int main(int argc, char* argv[]) {
     }
   }
   
+  SetConfigFlags(FLAG_WINDOW_RESIZABLE);
   InitWindow(windowWidth, windowHeight, "Gruvy Games");
   HideCursor();
   SetTargetFPS(240);

@@ -12,6 +12,8 @@ CpuPaddle::CpuPaddle() {
 }
 
 void CpuPaddle::Update(int ball_y) {
+  width = GetScreenWidth() / 64;
+  height = GetScreenHeight() / 7;
   if (yPos + height / 2 > ball_y) {
     yPos -= speed * GetFrameTime();
   }
@@ -32,6 +34,9 @@ PlayerPaddle::PlayerPaddle() {
 }
 
 void PlayerPaddle::Update() {
+  width = GetScreenWidth() / 64;
+  height = GetScreenHeight() / 7;
+  xPos = GetScreenWidth() - width - 10;
   if (IsKeyDown(KEY_UP)) {
     yPos -= speed * GetFrameTime();
   } else if (IsKeyDown(KEY_DOWN)) {

@@ -12,6 +12,7 @@ Ball::Ball() {
 void Ball::Update() {
   width = GetScreenWidth();
   height = GetScreenHeight();
+  ballRadius = GetScreenHeight() / 40;
 
   xPos += speedX * GetFrameTime();
   yPos += speedY * GetFrameTime();
