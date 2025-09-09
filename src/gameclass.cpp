@@ -24,6 +24,7 @@ void Game::Update() {
 
   if (IsKeyPressed(KEY_Q)) {
     m_togglePaused();
+    gameStarted = true;
   }
 }
 
@@ -36,7 +37,13 @@ void Game::Draw() {
   if (paused && gameStarted) {
     DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), Color{GRUVBOX_BG.r, GRUVBOX_BG.g, GRUVBOX_BG.b, 100});
     DrawText("PAUSED", GetScreenWidth() / 2 - MeasureText("PAUSED", GetScreenHeight() * 0.1f) / 2, GetScreenHeight() / 8, GetScreenHeight() * 0.1f, GRUVBOX_FG);
-    DrawText("Press Q key to start", GetScreenWidth() / 2 - MeasureText("Press Q key to start", GetScreenHeight() * 0.04f) / 2, GetScreenHeight() / 2, GetScreenHeight() * 0.04f, GRUVBOX_FG);
+    DrawText("Press Q key to unpause", GetScreenWidth() / 2 - MeasureText("Press Q key to unpause", GetScreenHeight() * 0.04f) / 2, GetScreenHeight() / 2, GetScreenHeight() * 0.04f, GRUVBOX_FG);
+  }
+
+  if (paused && !gameStarted) {
+    DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), GRUVBOX_BG);
+    DrawText("GRUVY PONG", GetScreenWidth() / 2 - MeasureText("GRUVY PONG", GetScreenHeight() * 0.1f) / 2, GetScreenHeight() / 8, GetScreenHeight() * 0.1f, GRUVBOX_FG);
+    DrawText("Press Q key to start!", GetScreenWidth() / 2 - MeasureText("Press Q key to unpause", GetScreenHeight() * 0.04f) / 2, GetScreenHeight() / 2, GetScreenHeight() * 0.04f, GRUVBOX_FG);
   }
 }
 

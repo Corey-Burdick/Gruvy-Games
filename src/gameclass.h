@@ -14,6 +14,7 @@ public:
   CpuPaddle cpu = CpuPaddle();
   PlayerPaddle player = PlayerPaddle();
   bool paused = true;
+  bool gameStarted = false;
 
   Game();
   void Update();
