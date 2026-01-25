@@ -21,6 +21,7 @@ public:
   void Draw();
 private:
   void m_togglePaused();
+  bool showFPS;
 };
 
 #endif // GAME_CLASS_H 
