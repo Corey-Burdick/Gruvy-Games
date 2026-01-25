@@ -36,7 +36,7 @@ void Game::Draw() {
 
   if (paused && gameStarted) {
     player.xPos = GetScreenWidth() - player.width - 10;
-    DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), Color{GRUVBOX_BG.r, GRUVBOX_BG.g, GRUVBOX_BG.b, 100});
+    DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), Color{255, 255, 255, 90});
     DrawText("PAUSED", GetScreenWidth() / 2 - MeasureText("PAUSED", GetScreenHeight() * 0.1f) / 2, GetScreenHeight() / 8, GetScreenHeight() * 0.1f, GRUVBOX_FG);
     DrawText("Press Q key to unpause", GetScreenWidth() / 2 - MeasureText("Press Q key to unpause", GetScreenHeight() * 0.04f) / 2, GetScreenHeight() / 2, GetScreenHeight() * 0.04f, GRUVBOX_FG);
   }
