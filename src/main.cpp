@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
   SetConfigFlags(FLAG_MSAA_4X_HINT);
   InitWindow(windowWidth, windowHeight, "Gruvy Games");
   HideCursor();
-  SetTargetFPS(240);
+  SetTargetFPS(60);
 
   if (fullscreen) {
     ToggleFullscreen();
