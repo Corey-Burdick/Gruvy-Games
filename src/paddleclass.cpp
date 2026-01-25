@@ -2,7 +2,7 @@
 
 void Paddle::Draw() {
   DrawRectangle(xPos, yPos, width, height, color);
-  DrawRectangleRoundedLinesEx(Rectangle{xPos, yPos, (float)width, (float)height}, 0.4, 10, 3, GRUVBOX_FG);
+  DrawRectangleRoundedLines(Rectangle{xPos, yPos, (float)width, (float)height}, 0.4, 10, 3, GRUVBOX_FG);
 } 
 
 CpuPaddle::CpuPaddle() {
