@@ -46,6 +46,7 @@ void Game::Draw() {
     DrawText("GRUVY PONG", GetScreenWidth() / 2 - MeasureText("GRUVY PONG", GetScreenHeight() * 0.1f) / 2, GetScreenHeight() / 8, GetScreenHeight() * 0.1f, GRUVBOX_FG);
     DrawText("Press Q key to start!", GetScreenWidth() / 2 - MeasureText("Press Q key to unpause", GetScreenHeight() * 0.04f) / 2, GetScreenHeight() / 2, GetScreenHeight() * 0.04f, GRUVBOX_FG);
   }
+  DrawFPS(0,0);
 }
 
 void Game::m_togglePaused() {

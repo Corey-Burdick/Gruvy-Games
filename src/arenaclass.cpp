@@ -18,5 +18,4 @@ void Arena::Draw() {
   DrawRectangle(width / 2 - 8, 0, 16, height * 0.25, GRUVBOX_FG);
   DrawRectangle(width / 2 - 8, height * 0.75, 16, height * 0.25, GRUVBOX_FG);
   DrawRing(Vector2{(float)width / 2, (float)height / 2}, height * 0.25, height * 0.28, 0, 360, 60, GRUVBOX_FG);
-  DrawFPS(0, 0);
 }
