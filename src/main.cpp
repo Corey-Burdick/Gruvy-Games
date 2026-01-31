@@ -15,6 +15,8 @@ int main(int argc, char* argv[]) {
           switch (argv[i][j]) {
             case 'f':
               fullscreen = true;
+              windowWidth = 1920;
+              windowHeight = 1080;
               break;
             case 'h':
               windowWidth = 1920;
