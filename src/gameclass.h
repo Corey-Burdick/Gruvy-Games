@@ -9,10 +9,10 @@
 
 class Game {
 public:
-  Arena arena = Arena();
-  Ball ball = Ball();
-  CpuPaddle cpu = CpuPaddle();
-  PlayerPaddle player = PlayerPaddle();
+  Arena arena;
+  Ball ball;
+  CpuPaddle cpu;
+  PlayerPaddle player;
   bool paused = true;
   bool gameStarted = false;
 

@@ -4,8 +4,6 @@
 #include "gameclass.h"
 
 int main(int argc, char* argv[]) {
-  int windowWidth = 1280;
-  int windowHeight = 720;
   bool fullscreen = false;
 
   if (argc > 1) {
@@ -15,12 +13,6 @@ int main(int argc, char* argv[]) {
           switch (argv[i][j]) {
             case 'f':
               fullscreen = true;
-              windowWidth = 1920;
-              windowHeight = 1080;
-              break;
-            case 'h':
-              windowWidth = 1920;
-              windowHeight = 1080;
               break;
           }
         }
@@ -30,15 +22,16 @@ int main(int argc, char* argv[]) {
   
   SetConfigFlags(FLAG_WINDOW_RESIZABLE);
   SetConfigFlags(FLAG_MSAA_4X_HINT);
-  InitWindow(windowWidth, windowHeight, "Gruvy Games");
+  InitWindow(1920, 1080, "Gruvy Games");
   HideCursor();
   SetTargetFPS(60);
 
   if (fullscreen) {
+    SetWindowSize(GetMonitorWidth(0), GetMonitorHeight(0));
     ToggleFullscreen();
   }
 
-  Game game = Game();
+  Game game;
 
   while (!WindowShouldClose()) {
     BeginDrawing();
